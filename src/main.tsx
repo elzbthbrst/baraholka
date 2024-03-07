@@ -7,6 +7,7 @@ import NotFound from "./routes/NotFound/NotFound.tsx";
 import About from "./routes/About/About.tsx";
 import HomePage from "./routes/HomePage/HomePage.tsx";
 import Cart from "./routes/Cart/Cart.tsx";
+import MyAccount from "./routes/MyAccount/MyAccount.tsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/log-in",
+        element: <MyAccount />,
       },
       { path: "/", element: <HomePage /> },
     ],

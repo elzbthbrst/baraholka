@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import Header from "./components/Header/Header";
 
 function App() {
-  return <div>
+  return <>
    <Header/>
     <main>
         <Outlet/>
@@ -10,7 +10,7 @@ function App() {
     <footer>
         footer
     </footer>
-  </div>;
+  </>;
 }
 
 export default App;

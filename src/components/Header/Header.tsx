@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className={style.header}>
-      <img src={Logo} alt="" />
+        <Link to=''>
+            <img src={Logo} alt="" />
+        </Link>
       <nav>
         <ul>
             <Link to='about-us'>Про нас</Link>
-            <li>Мій кабінет</li>
+            <Link to='log-in'>увійти</Link>
             <Link to='cart'>Kорзина</Link>
         </ul>
       </nav>
