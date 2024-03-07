@@ -11,23 +11,23 @@ import MyAccount from "./routes/MyAccount/MyAccount.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/baraholka/",
     element: <App />,
     errorElement: <NotFound />,
     children: [
       {
-        path: "/about-us",
+        path: "/baraholka/about-us",
         element: <About />,
       },
       {
-        path: "/cart",
+        path: "/baraholka/cart",
         element: <Cart />,
       },
       {
-        path: "/log-in",
+        path: "/baraholka/log-in",
         element: <MyAccount />,
       },
-      { path: "/", element: <HomePage /> },
+      { path: "/baraholka/", element: <HomePage /> },
     ],
   },
 ]);
